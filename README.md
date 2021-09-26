@@ -2,7 +2,7 @@
 
 Update on 25 sept 2021.
 
-
+Make sure you keep **main.cpp** and **FunsNClasses.cpp** together in the same folder ;)
 
 I combined all my knowledge to make this program.
 When this repository was private i gave it a lot of updates, i wrote all this code by myself as you can
