@@ -1,4 +1,4 @@
-#Mathematics ObjectAreaCalculator
+# Mathematics
 
 **Repository dedicated to mathematical calculations**
 
@@ -37,7 +37,7 @@ Circle:
 1.You can find area of circle.
 2.You can also find circumference of circle.
 
-#Limitations of this program. 
+# Limitations of this program. 
 Obviously with reasons.
 2.I am still in my learning age, i used all my knowledge and tricks to make this program as good as i could
 some of the problems i could not fix were
