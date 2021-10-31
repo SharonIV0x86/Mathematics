@@ -12,19 +12,19 @@ void clear_screen()
 #else
     std::system("clear");
 #endif
-    cin.get();
+    // cin.get();
 }
 void clear_screen_and_delay_cross_platform()
 {
 #ifdef _WIN32
 
     {
-        //long delay = 1000;
+        // long delay = 1000;
         clear_screen();
-        std::cout << "\n\tCalculating . . . . . . . . . ." << std::endl;
+        std::cout << "\n\n\tCalculating . . . . . . . . . ." << std::endl;
         Sleep(5000);
-        std::cout << "\n\tThanks for using the program, hope the asnwer is correct X)) ";
-        std::cout<<"HIT ENTER TO GET THE ANSWER! ";
+        std::cout << "\n\n\tThanks for using the program, hope the asnwer is correct X)) ";
+        std::cout << "HIT ENTER TO GET THE ANSWER! ";
         cin.get();
     }
 #else
@@ -37,7 +37,6 @@ void clear_screen_and_delay_cross_platform()
     }
 #endif
 }
-
 class SquareCalculations
 {
 public:
@@ -46,7 +45,7 @@ public:
         double area_of_square;
         clear_screen_and_delay_cross_platform();
 
-        std::cout << "\n\tThe area of square will be: " << side1 * side1 << " With side " << side1;
+        std::cout << "\n\n\tThe area of square will be: " << side1 * side1 << " With side " << side1;
 
         return 0;
     }
@@ -54,7 +53,7 @@ public:
     {
         double perimeter_of_sq = 4 * sidex4;
         clear_screen_and_delay_cross_platform();
-        std::cout << "\n\tThe perimeter of the square will be: " << perimeter_of_sq << " with side " << sidex4 << std::endl;
+        std::cout << "\n\n\tThe perimeter of the square will be: " << perimeter_of_sq << " with side " << sidex4 << std::endl;
 
         return perimeter_of_sq;
     }
@@ -67,8 +66,8 @@ public:
 
         double answer_AOT = (0.5) * base_OT * height_OT;
 
-        std::cout << "\n\tBase of triangle: " << base_OT;
-        std::cout << "\n\tHeight of triangle: " << height_OT;
+        std::cout << "\n\n\tBase of triangle: " << base_OT;
+        std::cout << "\n\n\tHeight of triangle: " << height_OT;
         clear_screen_and_delay_cross_platform();
         std::cout << "\n\n\tThe Area Of Triangle will be 1/2 x " << base_OT << " x " << height_OT << " =  " << answer_AOT;
 
@@ -76,10 +75,10 @@ public:
     }
     double perimeter_of_triangle(double side_a, double side_b, double side_c)
     {
-        std::cout << "The perimeter of the triangle is side1 + side2 + side3." << std::endl;
+        std::cout << "\n\n\tThe perimeter of the triangle is side1 + side2 + side3." << std::endl;
         clear_screen_and_delay_cross_platform();
-        std::cout << "Perimeter of triangle with side 1, = " << side_a << " side 2, = " << side_b << " side 3, = " << side_b;
-        std::cout << "\n\tThe perimeter of the triangle will be: " << side_a + side_b + side_c;
+        std::cout << "\n\n\tPerimeter of triangle with side 1, = " << side_a << " side 2, = " << side_b << " side 3, = " << side_b;
+        std::cout << "\n\n\tThe perimeter of the triangle will be: " << side_a + side_b + side_c;
 
         return 0;
     }
@@ -91,8 +90,8 @@ public:
 
         float area = sqrt(semi_peri * (semi_peri - side1) * (semi_peri - side2) * (semi_peri - side3));
         clear_screen_and_delay_cross_platform();
-        std::cout << "Semi-Perimeter of the sides will be: " << semi_peri << std::endl;
-        std::cout << "Area of triangle will be: " << area;
+        std::cout << "\n\n\tSemi-Perimeter of the sides will be: " << semi_peri << std::endl;
+        std::cout << "\n\n\tArea of triangle will be: " << area;
 
         return 0;
     }
@@ -105,7 +104,7 @@ public:
     {
         double answer_AOR = length_OR * breadth_OR;
         clear_screen_and_delay_cross_platform();
-        std::cout << "\n\tThe area of Rectangle will be: " << length_OR * breadth_OR;
+        std::cout << "\n\n\tThe area of Rectangle will be: " << length_OR * breadth_OR;
 
         return 0;
     }
@@ -113,8 +112,8 @@ public:
     {
         float diagonal = sqrt(pow(length, 2) + pow(breadth, 2));
         clear_screen_and_delay_cross_platform();
-        std::cout << "\n\tThe DIAGONAL of rectangle with length: " << length << " and breadth " << breadth << std::endl;
-        std::cout << "\n\tWIll BE: " << diagonal;
+        std::cout << "\n\n\tThe DIAGONAL of rectangle with length: " << length << " and breadth " << breadth << std::endl;
+        std::cout << "\n\n\tWIll BE: " << diagonal;
 
         return 0;
     }
@@ -122,7 +121,7 @@ public:
     {
         double perimeter = 2 * (LENGTH + BREADTH);
         clear_screen_and_delay_cross_platform();
-        std::cout << "\n\tThe PERIMETER of rectangle will be: " << perimeter;
+        std::cout << "\n\n\tThe PERIMETER of rectangle will be: " << perimeter;
 
         return 0;
     }
@@ -135,15 +134,29 @@ public:
     {
         clear_screen_and_delay_cross_platform();
 
-        std::cout << "\n\tThe area of CIRCLE will be: " << 3.14 * radius_OC * radius_OC;
+        std::cout << "\n\n\tThe area of CIRCLE will be: " << 3.14 * radius_OC * radius_OC;
 
         return 0;
     }
     double circumference_of_circle(double radius)
     {
         clear_screen_and_delay_cross_platform();
-        std::cout << "The CIRCUMFERENCE of the CIRCLE will be: " << 2 * 3.14 * radius;
+        std::cout << "\n\n\tThe CIRCUMFERENCE of the CIRCLE will be: " << 2 * 3.14 * radius;
 
         return 0;
     }
 };
+void delay_only_delay()
+{
+#ifdef _WIN32
+    {
+        std::cout << "\n\n\tPlease wait...";
+        Sleep(3000);
+    }
+#else
+    {
+        std::cout << "\n\n\tPlease wait...";
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+    }
+#endif
+}
