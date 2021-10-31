@@ -6,7 +6,7 @@ as update of 31st oct
 >>Added program ability to calculate trigonometric functions. such as sin,cos,tan etc.
 >>Added program ability to calculate arc tangent of T ratios.
 >>Will be adding more functionality to make complex mathematical calculations :)
-
+>>User friendly and less bugs
 Make sure you keep **main.cpp** and **FunsNClasses.cpp** together in the same folder ;)
 ![Mathematics](https://user-images.githubusercontent.com/91114837/139595859-d2406f55-1cdd-4869-b9fc-93d4442358a7.PNG)
 
@@ -37,7 +37,8 @@ Circle:
 1.You can find area of circle.
 2.You can also find circumference of circle.
 
-#LIMITATIONS ON THIS PROGRAM. Obviously with reasons.
+#Limitations of this program. 
+Obviously with reasons.
 2.I am still in my learning age, i used all my knowledge and tricks to make this program as good as i could
 some of the problems i could not fix were
 (i): there is use of tons of same code lines again. i dont know but i used a lot of code and variables again and again which was
