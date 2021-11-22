@@ -277,7 +277,7 @@ int main()
 
     case 3:
     {
-        char figure_selection;
+        
         std::cout << "\n\n\tPress 1 to find area of Rectangle: ";
         std::cout << "\n\n\tPress 2 to find DIAGONAL of rectangle: ";
         std::cout << "\n\n\tPress 3 to find PERIMETER of rectangle: ";
@@ -314,7 +314,7 @@ int main()
     case 4:
     {
         {
-            char figure_selection;
+            
             std::cout << "\n\n\tPress 1 to find AREA of CIRCLE: ";
             std::cout << "\n\n\tPress 2 to find CIRCUMFERENCE of circle: ";
             std::cin >> figure_selection;
