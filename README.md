@@ -8,7 +8,7 @@ as update of 31st oct
 >>Will be adding more functionality to make complex mathematical calculations :)
 >>User friendly and less bugs
 Make sure you keep **main.cpp** and **FunsNClasses.cpp** together in the same folder ;)
-![Mathematics](https://user-images.githubusercontent.com/91114837/139595859-d2406f55-1cdd-4869-b9fc-93d4442358a7.PNG)
+
 
 I combined all my knowledge to make this program.
 When this repository was private i gave it a lot of updates, i wrote all this code by myself as you can
